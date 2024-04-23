@@ -57,7 +57,7 @@ class VrptwAcoFigure:
                         remove_obj.append(line)
 
                 for line in remove_obj:
-                    self.figure_ax.lines.remove(line)
+                    line.remove()
                 remove_obj.clear()
 
                 # 重新绘制line
